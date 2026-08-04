@@ -69,3 +69,64 @@ content:
         label: Image Description
         type: string
         description: Briefly describe the image for accessibility.
+
+  - name: menus
+    label: Restaurant Menus
+    type: file
+    path: content/menu.json
+    format: json
+    fields:
+      - name: brunch
+        label: Brunch Menu Pages
+        type: image
+        options:
+          media: images
+          multiple:
+            max: 4
+          unique: true
+          categories:
+            - image
+
+      - name: lunch
+        label: Lunch Menu Pages
+        type: image
+        options:
+          media: images
+          multiple:
+            max: 4
+          unique: true
+          categories:
+            - image
+
+      - name: dinner
+        label: Dinner Menu Pages
+        type: image
+        options:
+          media: images
+          multiple:
+            max: 4
+          unique: true
+          categories:
+            - image
+
+      - name: desserts
+        label: Dessert Menu Pages
+        type: image
+        options:
+          media: images
+          multiple:
+            max: 4
+          unique: true
+          categories:
+            - image
+
+      - name: drinks
+        label: Drink Menu Pages
+        type: image
+        options:
+          media: images
+          multiple:
+            max: 4
+          unique: true
+          categories:
+            - image
