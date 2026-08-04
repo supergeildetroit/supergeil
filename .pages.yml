@@ -15,4 +15,37 @@ media:
       - document
     rename: safe
 
-content: []
+content:
+  - name: hours
+    label: Restaurant Hours
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: monday
+        label: Monday
+        type: string
+
+      - name: tuesday_thursday_lunch
+        label: Tuesday–Thursday Lunch
+        type: string
+
+      - name: tuesday_thursday_dinner
+        label: Tuesday–Thursday Dinner
+        type: string
+
+      - name: friday_saturday_lunch
+        label: Friday–Saturday Lunch
+        type: string
+
+      - name: friday_saturday_dinner
+        label: Friday–Saturday Dinner
+        type: string
+
+      - name: sunday_brunch
+        label: Sunday Brunch
+        type: string
+
+      - name: sunday_dinner
+        label: Sunday Dinner
+        type: string
