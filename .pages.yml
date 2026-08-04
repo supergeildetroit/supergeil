@@ -69,8 +69,3 @@ content:
         label: Image Description
         type: string
         description: Briefly describe the image for accessibility.
-
-      - name: caption
-        label: Optional Caption
-        type: string
-        required: false
