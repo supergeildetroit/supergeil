@@ -1,1 +1,19 @@
-
+{
+  "brunch": [
+    "images/brunch1.jpg",
+    "images/brunch2.jpg"
+  ],
+  "lunch": [
+    "images/lunch.jpg"
+  ],
+  "dinner": [
+    "images/dinner.jpg"
+  ],
+  "desserts": [
+    "images/dessert.jpg"
+  ],
+  "drinks": [
+    "images/drinks.jpg",
+    "images/drinks2.jpg"
+  ]
+}
