@@ -1,0 +1,18 @@
+media:
+  - name: images
+    label: Website Images
+    input: images
+    output: images
+    categories:
+      - image
+    rename: safe
+
+  - name: documents
+    label: Menus and Documents
+    input: documents
+    output: documents
+    categories:
+      - document
+    rename: safe
+
+content: []
