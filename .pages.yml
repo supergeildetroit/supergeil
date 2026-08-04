@@ -189,9 +189,8 @@ content:
         type: string
         required: false
         description: "Paste the reservation, ticket, or information link."
-          
-          
-    - name: homepage_banner
+
+  - name: homepage_banner
     label: Homepage Banner
     type: file
     path: content/banner.json
