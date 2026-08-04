@@ -189,3 +189,24 @@ content:
         type: string
         required: false
         description: "Paste the reservation, ticket, or information link."
+          
+          
+    - name: homepage_banner
+    label: Homepage Banner
+    type: file
+    path: content/banner.json
+    format: json
+    fields:
+      - name: enabled
+        label: Show Banner
+        type: boolean
+        default: true
+
+      - name: text
+        label: Banner Message
+        type: string
+
+      - name: link
+        label: Banner Link
+        type: string
+        description: "Use upcoming-events.html or paste a complete website link."
