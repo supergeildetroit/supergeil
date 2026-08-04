@@ -130,3 +130,62 @@ content:
           unique: true
           categories:
             - image
+
+  - name: upcoming_events
+    label: Upcoming Events
+    type: file
+    path: content/events.json
+    format: json
+    list: true
+    fields:
+      - name: published
+        label: Show This Event
+        type: boolean
+        default: true
+
+      - name: image
+        label: Event Photograph
+        type: image
+        options:
+          media: images
+          categories:
+            - image
+
+      - name: alt
+        label: Image Description
+        type: string
+        description: Briefly describe the event image for accessibility.
+
+      - name: date_label
+        label: Date Heading
+        type: string
+        description: Example: September 19–21, 2026
+
+      - name: title
+        label: Event Name
+        type: string
+
+      - name: description
+        label: Event Description
+        type: text
+
+      - name: date_time
+        label: Date and Time Details
+        type: string
+        description: Example: Saturday, September 19 from 5–10pm
+
+      - name: location
+        label: Location
+        type: string
+        default: Supergeil Detroit
+
+      - name: button_text
+        label: Button Text
+        type: string
+        default: Learn More
+
+      - name: button_url
+        label: Button Link
+        type: string
+        required: false
+        description: Paste the reservation, ticket, or information link.
