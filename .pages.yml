@@ -49,3 +49,31 @@ content:
       - name: sunday_dinner
         label: Sunday Dinner
         type: string
+
+  - name: gallery
+    label: Gallery Photos
+    type: file
+    path: content/gallery.json
+    format: json
+    list:
+      collapsible:
+        collapsed: true
+        summary: "Photo {index}"
+    fields:
+      - name: image
+        label: Photograph
+        type: image
+        options:
+          media: images
+          categories:
+            - image
+
+      - name: alt
+        label: Image Description
+        type: string
+        description: Briefly describe the image for accessibility.
+
+      - name: caption
+        label: Optional Caption
+        type: string
+        required: false
