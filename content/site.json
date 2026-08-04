@@ -1,0 +1,9 @@
+{
+  "monday": "Closed",
+  "tuesday_thursday_lunch": "noon–4pm",
+  "tuesday_thursday_dinner": "4pm–9pm",
+  "friday_saturday_lunch": "noon–4pm",
+  "friday_saturday_dinner": "4pm–10pm",
+  "sunday_brunch": "11am–4pm",
+  "sunday_dinner": "4pm–8pm"
+}
