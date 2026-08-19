@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Supergeil Detroit</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -190,73 +191,24 @@
       right: 0;
     }
 
-    /* COMING SOON */
+    /* INITIAL GALLERY LOADING STATE
+       gallery.js changes this element to .gallery-section after gallery.json loads. */
 
     .coming-soon {
-      position: relative;
       min-height: 390px;
-      padding: 85px 20px;
-      overflow: hidden;
       display: grid;
       place-items: center;
-      text-align: center;
-      background:
-        linear-gradient(
-          rgba(248, 246, 240, .96),
-          rgba(248, 246, 240, .96)
-        ),
-        repeating-linear-gradient(
-          90deg,
-          transparent 0 28px,
-          rgba(21, 21, 21, .04) 28px 29px
-        );
+      padding: 40px 20px;
+      background: var(--paper);
     }
 
-    .coming-soon::before,
-    .coming-soon::after {
-      content: "";
-      position: absolute;
-      width: clamp(210px, 23vw, 360px);
-      aspect-ratio: 1;
-      background: url("images/backgroundflourish.jpg") center / contain no-repeat;
-      mix-blend-mode: multiply;
-      opacity: .92;
-      pointer-events: none;
-    }
-
-    .coming-soon::before {
-      top: -115px;
-      left: -115px;
-      transform: scaleY(-1);
-    }
-
-    .coming-soon::after {
-      right: -115px;
-      bottom: -120px;
-      transform: scaleX(-1);
-    }
-
-    .coming-soon-inner {
-      position: relative;
-      z-index: 2;
-      width: min(720px, 100%);
-      margin: 0 auto;
-    }
-
-    .coming-soon h1 {
-      margin: 0 0 22px;
-      font-family: var(--display-font);
-      font-size: clamp(44px, 6vw, 76px);
-      font-weight: 400;
-      line-height: 1;
+    .gallery-loading {
+      margin: 0;
+      color: rgba(21, 21, 21, .62);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: .12em;
       text-transform: uppercase;
-    }
-
-    .coming-soon p {
-      max-width: 660px;
-      margin: 0 auto;
-      font-size: clamp(16px, 1.3vw, 18px);
-      line-height: 1.75;
     }
 
     /* FOOTER — matches index.html */
@@ -426,17 +378,6 @@
     @media (max-width: 560px) {
       .coming-soon {
         min-height: 320px;
-        padding: 65px 20px;
-      }
-
-      .coming-soon::before {
-        top: -90px;
-        left: -90px;
-      }
-
-      .coming-soon::after {
-        right: -90px;
-        bottom: -95px;
       }
     }
   </style>
@@ -478,16 +419,9 @@
   </header>
 
   <main>
+    <!-- Keep the coming-soon class: gallery.js uses it as its loading target. -->
     <section class="coming-soon">
-      <div class="coming-soon-inner">
-        <h1>Coming Soon</h1>
-
-        <p>
-          We’re putting the finishing touches on our gallery. Check back soon
-          for seasonal dishes, cocktails, events, and moments from around
-          Supergeil.
-        </p>
-      </div>
+      <p class="gallery-loading">Loading gallery…</p>
     </section>
   </main>
 
