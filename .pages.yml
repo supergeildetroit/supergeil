@@ -2,7 +2,7 @@ media:
   - name: images
     label: Website Images
     input: images
-    output: images
+    output: /images
     categories:
       - image
     rename: safe
@@ -10,7 +10,7 @@ media:
   - name: documents
     label: Menus and Documents
     input: documents
-    output: documents
+    output: /documents
     categories:
       - document
     rename: safe
@@ -208,4 +208,4 @@ content:
       - name: link
         label: Banner Link
         type: string
-        description: "Use upcoming-events.html or paste a complete website link."
+        description: "Use /upcoming-events/ or paste a complete website link."
